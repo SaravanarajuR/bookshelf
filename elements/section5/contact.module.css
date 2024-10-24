@@ -1,0 +1,88 @@
+.feedback {
+    background-color: var(--navy);
+    height: 150%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0;
+    gap: 5%;
+    justify-content: center;
+}
+
+.head {
+    color: white;
+}
+
+.contact {
+    height: 10%;
+    color: #000;
+    width: 100%;
+    display: flex;
+    gap: 10%;
+    background-color: var(--purple);
+    padding: 50px 20px;
+    width: 70%;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+
+    @media(max-width:700px) {
+        width: 90%;
+        gap: 5%;
+    }
+
+    @media(max-width:400px) {
+        gap: 1%;
+    }
+}
+
+.card {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    gap: 5px;
+
+    @media(max-width:700px) {
+        font-size: 15px;
+    }
+
+    @media(max-width:590px) {
+        font-size: 10px;
+        font-weight: 800;
+    }
+
+    @media(max-width:590px) {
+        font-size: 8px;
+        font-weight: 800;
+    }
+}
+
+.feedbackHead {
+    font-size: var(--mediumfont);
+    color: #fff;
+    font-weight: 700;
+}
+
+.form {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 70%;
+    display: flex;
+    border-radius: 10px;
+    height: 65%;
+    gap: 6%;
+    flex-shrink: 0;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 20px;
+
+    @media(max-width:700px) {
+        width: 90%;
+    }
+}
+
+.label {
+    color: white;
+}
