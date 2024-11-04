@@ -1,12 +1,12 @@
 .feedback {
     background-color: var(--navy);
-    height: 150%;
+    height: fit-content;
     width: 100%;
     align-items: center;
     display: flex;
     flex-direction: column;
     padding: 2% 0;
-    gap: 5%;
+    gap: 20px;
     justify-content: center;
 }
 
@@ -60,6 +60,11 @@
     }
 }
 
+.card:hover{
+    background-color: #000;
+    color:#fff;
+}
+
 .feedbackHead {
     font-size: var(--mediumfont);
     color: #fff;
@@ -71,15 +76,17 @@
     width: 70%;
     display: flex;
     border-radius: 10px;
-    height: 65%;
-    gap: 6%;
+    height: fit-content;
+    gap: 60px;
     flex-shrink: 0;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-direction: column;
     padding: 20px;
 
     @media(max-width:700px) {
+        height: fit-content;
         width: 90%;
+        height:50%;
     }
 }
 

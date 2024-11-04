@@ -7,6 +7,10 @@
     align-items: center;
     overflow-y: hidden;
     animation: expand 300ms;
+
+    @media(max-width:600px) {
+        height:10%;
+    }
 }
 
 .logo {
@@ -16,6 +20,7 @@
 .menuIcon {
     color: white;
     font-size: var(--aboveMedium);
+    margin:20px;
 }
 
 .menu {
@@ -61,7 +66,7 @@
     color: white;
 
     @media(max-width:750px) {
-        color: var(--purple);
+        color: white;
         height: 40px;
         padding: 0;
         display: flex;

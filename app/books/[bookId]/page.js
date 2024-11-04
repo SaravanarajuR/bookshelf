@@ -55,12 +55,12 @@ function bookRead({ params }) {
                         </div>
                         <div className={classes.reviewsCount}>{reviews.length} reviews</div>
                     </div>
+                    <Image alt="Book Image" src={book.thumbnail} width={200} height={300} className={classes.innerImage} />
                     <div className={classes.bottom}>
                         <div className={classes.bottomChild}><FavoriteIcon />{book.likes}</div>
                         <div className={classes.bottomChild}><RemoveRedEyeIcon />{book.reads}</div>
                         <div className={classes.bottomChild}><AutoStoriesIcon />Read</div>
                     </div>
-                    <div className={classes.price}>{book.pages}</div>
                 </div>
             </div>
             <div className={classes.section2Head}>See What People think about this book</div>

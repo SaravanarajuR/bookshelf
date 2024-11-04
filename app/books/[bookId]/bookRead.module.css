@@ -14,7 +14,13 @@
     background-color: var(--navy);
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+
+
+    @media (max-width:650px) {
+        flex-direction: column; 
+        height:60%;
+    }
 }
 
 .imageDiv {
@@ -29,6 +35,18 @@
 .image {
     border-radius: 10px;
     animation: blur 1000ms linear forwards;
+    @media (max-width:650px) {
+        display: none;
+    }
+}
+
+.innerImage{
+    border-radius: 10px;
+    animation: blur 1000ms linear forwards;
+
+    @media (min-width:650px) {
+        display: none;
+    }
 }
 
 .rightSection {
@@ -42,6 +60,11 @@
     position: relative;
     padding: 3%;
     gap: 10px;
+    width:100%;
+
+    @media (max-width:485px) {
+        height: fit-content;
+    }
 }
 
 .author {
@@ -80,6 +103,10 @@
     height: 40px;
     width: auto;
     justify-content: space-evenly;
+
+    @media (max-width:485px) {
+        position:unset;
+    }
 }
 
 .bottomChild {
